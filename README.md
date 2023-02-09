@@ -1,6 +1,13 @@
 # RBM-hierarchical-clustering
 Code for the paper "Unsupervised hierarchical clustering using the learning dynamics of RBMs" ([arXiv:2302.01851](https://arxiv.org/abs/2302.01851)) by Aurélien Decelle, Lorenzo Rosset and Beatriz Seoane.
 
+<p align="center">
+<image src="/images/tree-MNIST.png" width=228 height=200/>
+<p align="center">
+<em>Example of hierarchical clustering obtained on the MNIST dataset. Image taken from the paper.</em>
+</p>
+</p>
+
 ## Installation
 - Create the conda environment with all the dependences: 
 ```
@@ -10,6 +17,11 @@ conda env create -f RBMenv.yml
 - Include the main directory to your PATH environment variable by adding the following line to your ~/.bashrc file:
 ```
 export PATH=${PATH}:/path/to/RBM-hierarchical-clustering
+```
+
+- Create some repositories for storing the data and the programs' outputs
+```
+mkdir data models trees
 ```
 
 ## Usage
@@ -58,7 +70,7 @@ wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1XiP
 
 To download an example of RBM model trained on the MNIST dataset, use
 ```
-wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=194iINKzWGojGr1IHhFvWwOO0ytgLlV10' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=194iINKzWGojGr1IHhFvWwOO0ytgLlV10" -O 'models/MNIST/PottsBernoulliRBM-2023.2.7.15.27-MNIST-ep10000-lr0.001-Nh512-NGibbs100-mbs500-PCD.h5' && rm -rf /tmp/cookies.txt
+mkdir models/MNIST && wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=194iINKzWGojGr1IHhFvWwOO0ytgLlV10' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=194iINKzWGojGr1IHhFvWwOO0ytgLlV10" -O 'models/MNIST/PottsBernoulliRBM-2023.2.7.15.27-MNIST-ep10000-lr0.001-Nh512-NGibbs100-mbs500-PCD.h5' && rm -rf /tmp/cookies.txt
 ```
 
 To download the corresponding TreeRBM files, use
@@ -68,5 +80,3 @@ wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1t7C
 ```
 cd trees && tar -xf TreeRBM-PottsBernoulliRBM-2023.2.7.15.27-MNIST-Gibbs_steps100-train.tar.xz && rm TreeRBM-PottsBernoulliRBM-2023.2.7.15.27-MNIST-Gibbs_steps100-train.tar.xz && cd ..
 ```
-
-<image src="/images/tree-MNIST.png"/>
