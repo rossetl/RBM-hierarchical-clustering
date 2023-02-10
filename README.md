@@ -51,9 +51,11 @@ Mandatory:
 
 Optional information:
 - *train_labels* : labels for the training data in string format. If no label is available for certain data points, use the dummy label '-1';
-- *weights*: necessary only for the weighted versions of the training.
+- *train_names* : train set names for the tree leaves;
+- *weights*: necessary only for the weighted versions of the training;
 - *test*: test set data;
 - *test_labels* : labels for the test data in string format. If no label is available for certain data points, use the dummy label '-1';
+- *test_names* : test set names for the tree leaves.
 
 ## TreeRBM
 Once you have a trained model in the folder `models/`, you can use the `rbm-maketree` command to generate the hierarchical tree for a dataset compatible with the one used for the training of the RBM. Use `rbm-maketree -h` to list all the optional arguments.
