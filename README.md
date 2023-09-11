@@ -1,5 +1,5 @@
 # RBM-hierarchical-clustering
-[![arXiv](https://img.shields.io/badge/arXiv-2302.01851-blue.svg)](https://arxiv.org/abs/2302.01851)
+[![OpenReview](https://img.shields.io/badge/arXiv-2302.01851-red.svg)](https://openreview.net/forum?id=uXkfPvjYeM)
 
 Code for the paper "Unsupervised hierarchical clustering using the learning dynamics of RBMs" by Aurélien Decelle, Lorenzo Rosset and Beatriz Seoane.
 
