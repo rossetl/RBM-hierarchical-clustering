@@ -69,16 +69,18 @@ To generate a newick file of the tree and the corresponding iTOL annotation file
 ## Example data
 To download an example of an input file for training the RBM using the MNIST dataset, use
 ```
+mkdir data
 wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1XiP_KPKuGZmxoqQz6tnVqUFlxf44S5kX' -O 'data/MNIST.h5'
 ```
 
 To download an example of RBM model trained on the MNIST dataset, use
 ```
-mkdir models/MNIST && wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=194iINKzWGojGr1IHhFvWwOO0ytgLlV10' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=194iINKzWGojGr1IHhFvWwOO0ytgLlV10" -O 'models/MNIST/PottsBernoulliRBM-2023.2.7.15.27-MNIST-ep10000-lr0.001-Nh512-NGibbs100-mbs500-PCD.h5' && rm -rf /tmp/cookies.txt
+mkdir models && mkdir models/MNIST && wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=194iINKzWGojGr1IHhFvWwOO0ytgLlV10' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=194iINKzWGojGr1IHhFvWwOO0ytgLlV10" -O 'models/MNIST/PottsBernoulliRBM-2023.2.7.15.27-MNIST-ep10000-lr0.001-Nh512-NGibbs100-mbs500-PCD.h5' && rm -rf /tmp/cookies.txt
 ```
 
 To download the corresponding TreeRBM files, use
 ```
+mkdir trees
 wget --no-check-certificate 'https://drive.google.com/uc?export=download&id=1t7CR0qApAE8gC8YuwyeBZ6UZT4neogZT' -O 'trees/TreeRBM-PottsBernoulliRBM-2023.2.7.15.27-MNIST-Gibbs_steps100-train.tar.xz'
 ```
 ```
