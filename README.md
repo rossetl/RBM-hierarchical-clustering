@@ -3,6 +3,8 @@
 
 Code for the paper "Unsupervised hierarchical clustering using the learning dynamics of RBMs" by Aurélien Decelle, Lorenzo Rosset and Beatriz Seoane.
 
+**Attention**: A more updated and user-friendly version of this code can be found in [clusteRBM](https://github.com/rossetl/clusteRBM.git).
+
 <p align="center">
 <image src="/images/tree-MNIST.png" width=456 height=400/>
 <p align="center">
